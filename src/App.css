@@ -109,4 +109,10 @@ label{
         width: 100vw;
         padding: 2rem;
     }
+    .filter_conatiner{
+        flex-direction: column;
+    }
+    .filter_conatiner div{
+        margin: 10px 0;
+    }
 }
