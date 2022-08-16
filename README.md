@@ -14,5 +14,15 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
+# Home page
+<img src='./src/neptrip_ss/home.png'/>
 
+# Top destinations 
+<img src='./src/neptrip_ss/topdestination.png'/>
+
+# Destination List page with filter
+<img src='./src/neptrip_ss/destinationlist.png'/>
+
+# Destination page with recomendations
+<img src='./src/neptrip_ss/destinationpage.png'/>
 
