@@ -15,14 +15,18 @@ The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
 # Home page
+Home page with bootstrap navbar and slider.
 <img src='./src/neptrip_ss/home.png'/>
 
 # Top destinations 
+Coponent for listing top 3 destinations.
 <img src='./src/neptrip_ss/topdestination.png'/>
 
 # Destination List page with filter
+Destenations are rendered according to filter
 <img src='./src/neptrip_ss/destinationlist.png'/>
 
 # Destination page with recomendations
+Destination description page with recomendation.
 <img src='./src/neptrip_ss/destinationpage.png'/>
 
