@@ -1,38 +1,112 @@
-.App {
-  text-align: center;
+:root{
+    --mainColor: red;
+}
+a{
+    text-decoration: none;
+}
+.cardbtn {
+    border-radius: 0.5rem;
+    background-color: rgb(27, 27, 182);
+}
+.cardbtn a{
+    color: white;
+    text-decoration: none;
+}
+.card a:hover{
+    color: white;
+}
+/* navbar css */
+.nav-link{
+    padding-left: 20px !important;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* slider css */
+.carousel .carousel-item {
+    height: 90vh;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  .carousel-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: brightness(0.9);
   }
-  to {
-    transform: rotate(360deg);
-  }
+
+/* banner */
+.banner{
+    background-color: azure;
+    text-align: center;
+    padding: 15px 0;
+    text-transform: capitalize;
+}
+
+/* destication card */
+.card-img-top{
+   height: 250px;
+   object-fit: cover;
+}
+.card{
+    margin-bottom: 1rem;
+}
+
+/* title */
+.section_title{
+    text-transform: capitalize;
+    margin-left: 15%;
+    letter-spacing: 1px;
+    padding: 3rem 0;
+}
+
+/* destination container */
+.destination_container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    place-items: center;
+    grid-gap: 50px;
+    padding: 2rem 5rem;
+}
+/* filter conatiner */
+.filter_conatiner{
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+label{
+    margin-right: 0.5rem;
+}
+
+/* destination description */
+.description_desc_container{
+    display: flex;
+}
+.destination_image{
+    width: 40vw;
+    height: 60vh;
+    padding: 2rem;
+    
+}
+.destination_image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.destination_description{
+    width: 50vw;
+    padding: 2rem;
+}
+@media (max-width: 720px) {
+    .description_desc_container{
+        flex-direction: column;
+    }
+    .destination_image{
+        width: 100vw;
+        height: 60vh;
+        padding: 2rem;
+    }
+    .destination_description{
+        width: 100vw;
+        padding: 2rem;
+    }
 }
