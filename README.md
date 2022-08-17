@@ -1,6 +1,14 @@
-# Getting Started with Create React App
+# NepTrip 
+ UI for tourism based website.
+ ## Feature:
+ <ul>
+  <li>Home page with images slider and top destinations </li>
+  <li>Destination list page with filter function, filtering can be done using 3 parameters</li>
+  <li>Destination Description page with destination recomendations </li>
+  <li> Error page for error route </li>
+</ul>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
 
 ## Available Scripts
 
