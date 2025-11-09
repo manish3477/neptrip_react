@@ -1,5 +1,5 @@
 # NepTrip 
- UI for tourism based website.
+ UI for travel based website.
  ## Feature:
  <ul>
   <li>Home page with images slider and top destinations </li>
