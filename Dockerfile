@@ -1,29 +1,25 @@
 # Use official Node.js image
 FROM node:18-alpine AS build
 
-# Set working directory inside container
 WORKDIR /app
 
-# Copy package.json and package-lock.json
+# Copy package.json and lock file
 COPY package*.json ./
 
-# Install dependencies
 RUN npm install
 
-# Copy all source files
-COPY ./ .app
+# Copy the entire project into the container
+COPY . .
 
-# Build the app for production
+# Verify files before building
+RUN echo "Contents of /app/public:" && ls -l /app/public
+
+# Build the app
 RUN npm run build
 
-# Stage 2 — use a lightweight web server
+# Use nginx to serve the production build
 FROM nginx:alpine
-
-# Copy build files from the previous stage
 COPY --from=build /app/build /usr/share/nginx/html
 
-# Expose port 3000 inside container (optional)
 EXPOSE 3000
-
-# Run nginx server
 CMD ["nginx", "-g", "daemon off;"]
