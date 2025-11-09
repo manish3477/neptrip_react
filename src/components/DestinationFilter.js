@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import { Button } from 'react-bootstrap';
+import { Button, Col, Container, Row } from 'react-bootstrap';
 import { DestinationContext } from '../context';
 
 const getUnique = (items,value) =>{
@@ -32,7 +32,9 @@ export default function DestinationFilter({destinations}) {
     window.location.reload();
   }
   return (
-    <div className='filter_conatiner'>
+    <Container>
+      <Row className='center test'>
+        <Col>
             <div>
             <label htmlFor="rating">Top rated: </label>
             <input 
@@ -44,6 +46,8 @@ export default function DestinationFilter({destinations}) {
             >
             </input>
             </div>
+            </Col>
+            <Col>
             <div>
             <label htmlFor="daystovisit">By days to visit: {daystovisit} </label>
             <input
@@ -56,6 +60,8 @@ export default function DestinationFilter({destinations}) {
                onChange={handleChange}
                 />
             </div>
+            </Col>
+            <Col>
             <div>
             <label htmlFor="type">By Types:</label>
             <select
@@ -67,9 +73,13 @@ export default function DestinationFilter({destinations}) {
             {types}
             </select>
             </div>
+            </Col>
+            <Col>
             <div>
             <Button variant='outline-primary' onClick={resetPage}>Reset filter</Button>
             </div>
-    </div>
+            </Col>
+            </Row>
+    </Container>
   )
 }

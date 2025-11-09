@@ -5,12 +5,13 @@ import  pokhara  from '../images/pokhara.jpg'
 import  gumba  from '../images/gumba.jpg'
 
 
+
 export default function Slider() {
   return (
     <Carousel>
     <Carousel.Item>
       <img
-        className="d-block w-100"
+        className="d-block w-100 slider_img"
         src= {bouddha}
         alt="First slide"
       />

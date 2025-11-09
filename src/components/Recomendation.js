@@ -1,4 +1,5 @@
 import React from 'react'
+import { Container, Row } from 'react-bootstrap';
 import Destination from './Destination'
 import Title from './Title'
 
@@ -13,8 +14,9 @@ export default function Recomendation(destinations) {
 
   return (
     <>
-    <Title title="recomended destinations"/>
-    <div className='destination_container'>
+    <Title title="similar destinations:"/>
+    <Container className='my-5'>
+      <Row className='gx-0 center'>
        {
            tempdata.map((item)=>{
                return(
@@ -24,7 +26,8 @@ export default function Recomendation(destinations) {
                )
            })
        }
-    </div>
+       </Row>
+       </Container>
     </>
   )
 }

@@ -1,6 +1,7 @@
 import React from 'react'
 import Destination from './Destination'
 import Banner from './Banner'
+import { Container, Row } from 'react-bootstrap'
 
 
 export default function DestinationList({destinations}) {
@@ -10,12 +11,20 @@ export default function DestinationList({destinations}) {
     )
   }
   return (
-    <div className='destination_container'>
+    <>
+    <Container>
+      <Row className='gx-0 my-5 center'>
       {
         destinations.map((item) => {
-          return <Destination key={item.id} destination={item}/>
+          return(
+            <>
+            <Destination key={item.id} destination={item}/>
+            </> 
+            )
         })
-      }     
-    </div>
+      }  
+      </Row>
+      </Container>
+      </>   
   )
 }

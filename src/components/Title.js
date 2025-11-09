@@ -1,10 +1,14 @@
 import React from 'react'
+import { Container, Row } from 'react-bootstrap'
 
 export default function Title({title}) {
   return (
-    <div className="section_title">
-    <h4>{title}</h4>
-    <div />
-</div>
+    <>
+    <Container>
+      <Row className='my-5'>
+    <h3>{title}</h3>
+    </Row>
+    </Container>
+    </>
   )
 }

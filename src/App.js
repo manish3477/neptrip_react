@@ -10,6 +10,7 @@ import
 import Destinations from './pages/Destinations';
 import Error from './pages/Error';
 import Destinationdescription from './pages/Destinationdescription';
+import Gallery from './pages/Gallery';
 function App() {
   return (
     <div>
@@ -19,6 +20,7 @@ function App() {
           <Route exact path='/' element={<Home/>}></Route>
           <Route exact path='/destinations' element={<Destinations/>}></Route>
           <Route exact path='/destination/:id' element={<Destinationdescription/>}></Route>
+          <Route exact path='/gallery' element={<Gallery/>}></Route>
           <Route path='*' element={<Error/>} />
         </Routes>
       </Router>

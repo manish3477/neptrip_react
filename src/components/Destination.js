@@ -9,14 +9,14 @@ export default function Destination({ destination }) {
   const {name, id ,image, description } = destination;
   return (
     <>
-    <Card style={{ width: '20rem'}}>
+    <Card className='dropshadow' style={{ width: '20rem', margin:'1rem'}}>
       <Card.Img variant="top" src={image} />
       <Card.Body>
         <Card.Title>{name}</Card.Title>
         <Card.Text>
           {description}
         </Card.Text>
-        <button className='cardbtn'><Link to={`/destination/${id}`} variant="primary">view more</Link></button>
+        <Link to={`/destination/${id}`} variant="primary"><i class="fa-solid fa-eye"></i> View More</Link>
       </Card.Body>
     </Card>
     </>
