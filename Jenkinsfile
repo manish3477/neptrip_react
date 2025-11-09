@@ -1,13 +1,6 @@
 pipeline {
     agent any
 
-    stages {
-        stage('Clone Code') {
-            steps {
-                git branch: 'master', url: 'https://github.com/manish3477/neptrip_react.git'
-            }
-        }
-
         stage('Create Container') {
             steps {
                 sh '''
